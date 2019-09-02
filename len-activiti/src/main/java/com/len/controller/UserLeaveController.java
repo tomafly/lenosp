@@ -68,7 +68,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import sun.misc.BASE64Encoder;
+//import sun.misc.BASE64Encoder;
 
 /**
  * @author zhuxiaomeng
@@ -450,7 +450,7 @@ public class UserLeaveController extends BaseController {
             throws IOException {
         JSONObject result = new JSONObject();
         JSONArray shineProImages = new JSONArray();
-        BASE64Encoder encoder  = new BASE64Encoder();
+//        BASE64Encoder encoder  = new BASE64Encoder();
         InputStream imageStream = generateStream(request,resp,processInstanceId,true);
         if(imageStream!=null)
         {
